@@ -24,7 +24,7 @@ Inicio do Chat .....\
 </textarea>\
 <input type="button" name="botao-ok" value="send txt" onclick = "enviaMensagem()"> </input>\
 </body>\
-</html>
+</html>\
 "
 
 if __name__ == "__main__":
