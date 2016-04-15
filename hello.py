@@ -7,8 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return "<html><head>\
-<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />\
-<meta http-equiv='Content-Script-Type' content='text/javascript'>\
+\
 <title>Endereços randomicos</title>\
 <script type='text/javascript'>\
 var v = new Array('http://www.uol.com.br','http://www.hardware.com.br/','http://www.google.com');\
