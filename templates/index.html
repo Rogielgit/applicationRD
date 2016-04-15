@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Endereços randomicos</title>
+<script type="text/javascript">
+var v = new Array("http://www.sandraandwoo.com/","http://www.girlgeniusonline.com/","http://just-shower-thoughts.tumblr.com/","http://vidadeprogramador.com.br/","http://www.trypap.com/","http://www.freepacman.org/welcome.php","http://www.rainymood.com/","http://www.rrrgggbbb.com/","http://www.scp-wiki.net/","http://www.megagames.com/","http://www.escapistmagazine.com/","http://www.yahoo.com","http://www.deviantart.com/","http://www.vimeo.com/","http://www.haneke.net/","http://globoesporte.globo.com/futebol/","https://www.formula1.com/","http://pmav.eu/stuff/javascript-game-of-life-v3.1.1/","http://www.virtualnes.com/","http://bestofyoutube.com/","http://maddox.xmission.com/","http://theoatmeal.com/","http://shutupandtakemymoney.com/","http://www.incredibox.com/","http://www.craigslist.org/about/best/all/","http://clientsfromhell.net/","http://www.thelonelyisland.com/","http://textastrophe.com/","https://kerbalspaceprogram.com/","http://www.drawastickman.com/","http://www.asofterworld.com/","http://www.cheezburger.com/","http://www.despair.com/demotivators.html","http://improveverywhere.com/","http://www.vectorpark.com/","http://www.thisiswhyimbroke.com/","http://littlealchemy.com/","http://www.thepointless.com/dots","http://www.passiveaggressivenotes.com/","http://www.joecartoon.com/","http://mmo-play.com/","http://www.homestarrunner.com/","http://www.asofterworld.com/oqarchive.php","http://textsfromlastnight.com/","http://neave.com/","http://rhettandlink.com/","http://www.mspaintadventures.com/","http://weavesilk.com/","http://www.deargirlsaboveme.com/","http://www.dudeiwantthat.com/","http://www.collegehumor.com/","http://iwastesomuchtime.com/","http://www.instructables.com/","http://www.ebaumsworld.com/","http://www.peopleofwalmart.com/","http://darwinawards.com/","http://www.funnyordie.com/","http://winningateverything.com/","http://www.lunchtimers.com/","http://penny-arcade.com/","http://roosterteeth.com/","http://honestslogans.com/","http://www.craigslist.org/about/best/all/","http://www.pointlesssites.com/", "http://www.findtheinvisiblecow.com/","https://www.linuxmint.com/","http://www.giantitp.com/","https://www.nasa.gov/","https://twitter.com/","https://www.wikipedia.org/","http://www.tvtropes.org","http://zombo.com/","http://www.fallingfalling.com/","http://www.koalastothemax.com/","http://armorgames.com/","https://archive.org/index.php","http://www.gutenberg.org/","http://xkcd.com/","http://www.linuxfoundation.org/","http://mundotentacular.blogspot.com.br/","http://pudim.com.br/","http://www.staggeringbeauty.com/","http://www.dramabutton.com/","http://hooooooooo.com/","https://www.youtube.com/","http://9gag.com/","http://satwcomic.com/");
+function random_element(a)
+{
+
+ var novo_endereco;
+ var i
+ novo_endereco=a[Math.floor(Math.random() * a.length)];
+// O for abaixo é uma forma padrão de atribuir um endereço a um link nomeado
+// Uma forma mais simples de fazer isso seria
+
+ for (i=0; i<document.anchors.length; i++)
+{
+  if (document.anchors[i].name=="endereco_variavel")
+  {
+   document.anchors[i].href=novo_endereco;
+  }
+}
+ return novo_endereco
+}
+</script>
+</head>
+
+<body bgcolor="#cfba92">
+    <center>
+        <h1>Tô No Tédio</h1>
+    <center>
+    <div>
+            <img src="https://pixabay.com/static/uploads/photo/2014/10/08/02/47/bored-478651_960_720.png" width=288 height=216/><br><br>
+            <input type="button" value="Clique para obter um endereço randômico" onclick="window.open(random_element(v),' _blank');" name="endereco_variavel" style="border-radius: 4px; box-shadow: 0 8px 8px 0; border: none; font-size: 12px">
+    </div>
+</body>
+</html>
