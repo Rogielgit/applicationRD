@@ -5,7 +5,11 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-"""def index():
+def index():
+    a = 5;
+    b = 6
+    print a + b
+"""
 
     return "<html><script>function enviaMensagem()\
 {\
@@ -27,12 +31,6 @@ Inicio do Chat .....\
 </html>\
 "
 """
-
-def soma():
-    a = 5;
-    b = 6
-    print a + b
-        
     
     
 
