@@ -4,9 +4,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
+    name = raw_input("Digite um nome");
     return "<h1>Hello World</hi>"
 
 if __name__ == "__main__":
