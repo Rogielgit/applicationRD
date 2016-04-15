@@ -17,12 +17,12 @@ def index():
 <center>\
     <h1>Chat HelloMyFriends </h1>\
 </center>\
-<textarea  id ="chat_princ" name = "chat" rows="20" cols="100">\
+<textarea  id ='chat_princ' name = 'chat' rows='20' cols='100'>\
 Inicio do Chat .....\
 </textarea>\
-<textarea id ="chat_client" name = "text-cliente" rows="10" cols="30">\
+<textarea id ='chat_client' name = 'text-cliente' rows='10' cols='30'>\
 </textarea>\
-<input type="button" name="botao-ok" value="send txt" onclick = "enviaMensagem()"> </input>\
+<input type='button' name='botao-ok' value='send txt' onclick = 'enviaMensagem()'> </input>\
 </body>\
 </html>\
 "
