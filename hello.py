@@ -6,32 +6,40 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-   
-    a = 5;
-    b = 6
-   return print a + b
-"""
-
-    return "<html><script>function enviaMensagem()\
+    return "<html><head>\
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />\
+<meta http-equiv='Content-Script-Type' content='text/javascript'>\
+<title>Endereços randomicos</title>\
+<script type='text/javascript'>\
+var v = new Array('http://www.uol.com.br','http://www.hardware.com.br/','http://www.google.com');\
+function random_element(a)\
 {\
- \
- var texto = document.getElementById('chat_client').value;\
- document.getElementById('chat_princ').value = texto;}\
+ var novo_endereco;\
+ var i\
+ novo_endereco=a[Math.floor(Math.random() * a.length)];\
+// O for abaixo é uma forma padrão de atribuir um endereço a um link nomeado\
+// Uma forma mais simples de fazer isso seria\
+ for (i=0; i<document.anchors.length; i++)\
+{\
+  if (document.anchors[i].name=='endereco_variavel')\
+  {\
+   document.anchors[i].href=novo_endereco;\
+  }\
+}\
+ return novo_endereco\
+}\
 </script>\
-<body>\
-<center>\
-    <h1>Chat HelloMyFriends </h1>\
-</center>\
-<textarea  id ='chat_princ' name = 'chat' rows='20' cols='100'>\
-Inicio do Chat .....\
-</textarea>\
-<textarea id ='chat_client' name = 'text-cliente' rows='10' cols='30'>\
-</textarea>\
-<input type='button' name='botao-ok' value='send txt' onclick = 'enviaMensagem()'> </input>\
+</head>\
+ <body>\
+        <center>\
+        <h1>Tô No Tédio</h1>\
+                <center>\
+        <div>\
+            <input type='button' value='Clique para obter um endereço randômico' onclick='window.open(random_element(v));'\ name='endereco_variavel'>\
+        </div>\
 </body>\
-</html>\
-"
-"""
+</html>"
+
     
     
 
