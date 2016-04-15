@@ -5,7 +5,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def index():
+"""def index():
 
     return "<html><script>function enviaMensagem()\
 {\
@@ -26,6 +26,15 @@ Inicio do Chat .....\
 </body>\
 </html>\
 "
+"""
+
+def soma():
+    a = 5;
+    b = 6
+    print a + b
+        
+    
+    
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
