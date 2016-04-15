@@ -6,9 +6,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+   
     a = 5;
     b = 6
-    print a + b
+   return print a + b
 """
 
     return "<html><script>function enviaMensagem()\
