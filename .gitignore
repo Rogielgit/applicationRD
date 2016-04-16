@@ -1,6 +1,6 @@
 *.pyc
 venv
 *~
-hello.py.swn
-hello.py.swo
-hello.py.swp
+.hello.py.swn
+.hello.py.swo
+.hello.py.swp
